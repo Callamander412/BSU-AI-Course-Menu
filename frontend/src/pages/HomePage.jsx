@@ -9,7 +9,8 @@ const projects = [
     title: '3D Bobblehead',
     subtitle: 'AI-Powered 3D Modeling',
     description: 'Create custom 3D bobbleheads using AI and 3D printing technology',
-    image: 'https://customer-assets.emergentagent.com/job_5c98d90a-cfee-4a8e-a956-e1801db1cef4/artifacts/4j6rlzg2_image.png',
+    hoverDescription: 'Learn to scan, model, and 3D print your own custom bobbleheads with step-by-step tutorials',
+    image: 'https://customer-assets.emergentagent.com/job_bsu-ai-projects/artifacts/c0icttwd_ChatGPT%20Image%20Oct%208%2C%202025%2C%2009_36_16%20PM.png',
     route: '/bobblehead',
     gradient: 'from-emerald-600 to-teal-600'
   },
@@ -18,7 +19,8 @@ const projects = [
     title: 'Music Generation',
     subtitle: 'AI Music with Suno',
     description: 'Generate original music tracks using Suno AI technology',
-    image: 'https://customer-assets.emergentagent.com/job_5c98d90a-cfee-4a8e-a956-e1801db1cef4/artifacts/jme4o13q_image.png',
+    hoverDescription: 'Compose professional music across any genre using AI - from prompt to finished track',
+    image: 'https://customer-assets.emergentagent.com/job_bsu-ai-projects/artifacts/56mj4hgz_ChatGPT%20Image%20Oct%208%2C%202025%2C%2009_53_48%20PM.png',
     route: '/music-generation',
     gradient: 'from-green-600 to-emerald-600'
   },
@@ -27,6 +29,7 @@ const projects = [
     title: 'Video Generation',
     subtitle: 'AI Video Creation',
     description: 'Create stunning videos using cutting-edge AI video generation tools',
+    hoverDescription: 'Master AI video generation, professional editing, and cinematic production techniques',
     image: 'https://customer-assets.emergentagent.com/job_5c98d90a-cfee-4a8e-a956-e1801db1cef4/artifacts/xnxvzpde_image.png',
     route: '/video-generation',
     gradient: 'from-teal-600 to-cyan-600'
@@ -36,7 +39,8 @@ const projects = [
     title: 'Portfolio Website',
     subtitle: 'Build with Emergent',
     description: 'Create professional portfolio websites using Emergent platform',
-    image: 'https://customer-assets.emergentagent.com/job_5c98d90a-cfee-4a8e-a956-e1801db1cef4/artifacts/u0jaexon_image.png',
+    hoverDescription: 'Build and deploy your own portfolio website using AI-powered development tools',
+    image: 'https://customer-assets.emergentagent.com/job_bsu-ai-projects/artifacts/0x7wxxcn_ChatGPT%20Image%20Oct%208%2C%202025%2C%2009_37_34%20PM.png',
     route: '/portfolio',
     gradient: 'from-emerald-600 to-green-600'
   },
@@ -45,7 +49,8 @@ const projects = [
     title: 'Krita LORA Training',
     subtitle: 'AI Art Models',
     description: 'Train custom LORA models on your artwork using Krita',
-    image: 'https://customer-assets.emergentagent.com/job_bsu-ai-projects/artifacts/ouhr2l1g_image.png',
+    hoverDescription: 'Train AI models that understand your unique art style and create personalized AI tools',
+    image: 'https://customer-assets.emergentagent.com/job_bsu-ai-projects/artifacts/ewryhhqi_ChatGPT%20Image%20Oct%208%2C%202025%2C%2010_13_22%20PM.png',
     route: '/krita-lora',
     gradient: 'from-green-600 to-teal-600'
   }
