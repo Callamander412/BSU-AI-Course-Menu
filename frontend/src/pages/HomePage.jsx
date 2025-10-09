@@ -123,6 +123,8 @@ const HomePage = () => {
                 key={project.id}
                 className={getCardClass(index)}
                 onClick={() => handleCardClick(index)}
+                onMouseEnter={() => setHoveredCard(index)}
+                onMouseLeave={() => setHoveredCard(null)}
               >
                 <div className="card-image-wrapper">
                   <img src={project.image} alt={project.title} className="card-image" />
@@ -133,6 +135,11 @@ const HomePage = () => {
                   <h3 className="card-title">{project.title}</h3>
                   <p className="card-description">{project.description}</p>
                 </div>
+                {hoveredCard === index && index === currentIndex && (
+                  <div className="hover-tooltip">
+                    {project.hoverDescription}
+                  </div>
+                )}
               </div>
             ))}
           </div>
