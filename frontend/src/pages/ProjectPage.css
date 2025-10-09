@@ -1,0 +1,318 @@
+.project-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a1e1a 0%, #0f2c23 50%, #0a1e1a 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.project-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(20, 184, 166, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Back Button */
+.back-button {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #10b981;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.back-button:hover {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: #10b981;
+  transform: translateX(-5px);
+  box-shadow: 0 5px 20px rgba(16, 185, 129, 0.2);
+}
+
+/* Project Header */
+.project-header {
+  padding: 6rem 3rem 3rem;
+  position: relative;
+  z-index: 5;
+}
+
+.project-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.project-hero-content {
+  animation: fadeInLeft 0.8s ease-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.project-badge {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #10b981;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.project-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #10b981 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #b0b0b0;
+  max-width: 600px;
+}
+
+.project-hero-image {
+  position: relative;
+  animation: fadeInRight 0.8s ease-out;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.project-hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-hero-image img:hover {
+  transform: scale(1.02) translateY(-5px);
+  box-shadow: 0 25px 70px rgba(16, 185, 129, 0.2);
+}
+
+/* Tutorials Section */
+.tutorials-section {
+  padding: 4rem 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+
+.tutorials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2.5rem;
+}
+
+.tutorial-card {
+  background: rgba(15, 44, 35, 0.6);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(20px);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tutorial-card:nth-child(1) { animation-delay: 0.1s; }
+.tutorial-card:nth-child(2) { animation-delay: 0.2s; }
+.tutorial-card:nth-child(3) { animation-delay: 0.3s; }
+.tutorial-card:nth-child(4) { animation-delay: 0.4s; }
+
+.tutorial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.tutorial-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.tutorial-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.tutorial-card:hover .tutorial-image {
+  transform: scale(1.08);
+}
+
+.tutorial-icon {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+  transition: all 0.3s ease;
+}
+
+.tutorial-card:hover .tutorial-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 15px 40px rgba(16, 185, 129, 0.4);
+}
+
+.tutorial-content {
+  padding: 2rem;
+}
+
+.tutorial-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.tutorial-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #b0b0b0;
+}
+
+/* Footer */
+.project-footer {
+  padding: 2rem 3rem;
+  text-align: center;
+  color: #808080;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(16, 185, 129, 0.1);
+  background: rgba(10, 30, 26, 0.6);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 10;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .project-hero {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .project-title {
+    font-size: 2.8rem;
+  }
+  
+  .tutorials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .back-button {
+    top: 1rem;
+    left: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+  
+  .project-header {
+    padding: 4rem 1.5rem 2rem;
+  }
+  
+  .project-title {
+    font-size: 2.2rem;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+  }
+  
+  .tutorials-section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .tutorials-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .tutorial-card {
+    min-width: auto;
+  }
+}
