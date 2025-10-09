@@ -58,6 +58,7 @@ const projects = [
 
 const HomePage = () => {
   const [currentIndex, setCurrentIndex] = useState(2);
+  const [hoveredCard, setHoveredCard] = useState(null);
   const navigate = useNavigate();
 
   const handlePrevious = () => {
