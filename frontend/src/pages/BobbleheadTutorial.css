@@ -1,0 +1,505 @@
+/* Bobblehead Tutorial Styles */
+.bobblehead-tutorial-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Hero Section */
+.tutorial-hero {
+  margin-bottom: 3rem;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.project-overview {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.project-overview h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-overview h3 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.project-overview ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-overview li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.project-overview li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4ade80;
+  font-weight: bold;
+}
+
+/* Progress Tracker */
+.progress-tracker {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.progress-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4ade80, #22c55e);
+  transition: width 0.3s ease;
+}
+
+/* Tools Section */
+.tools-section {
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tools-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.tool-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.tool-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  color: white;
+}
+
+/* Ethics Section */
+.ethics-section {
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ethics-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.ethics-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.ethics-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #fbbf24;
+}
+
+.ethics-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ethics-card li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.ethics-card li::before {
+  content: "⚠️";
+  position: absolute;
+  left: 0;
+}
+
+.ethics-card a {
+  color: #93c5fd;
+  text-decoration: underline;
+}
+
+.ethics-card a:hover {
+  color: #dbeafe;
+}
+
+.reflection-prompt {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border-left: 4px solid #fbbf24;
+  margin-top: 1rem;
+}
+
+.reflection-prompt h4 {
+  margin-bottom: 1rem;
+  color: #fbbf24;
+}
+
+/* Tutorial Steps */
+.tutorial-steps {
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tutorial-steps h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.steps-accordion {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.step-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.step-item:last-child {
+  border-bottom: none;
+}
+
+.step-header-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.step-checkbox {
+  flex-shrink: 0;
+}
+
+.step-trigger {
+  flex: 1;
+  border: none;
+  background: none;
+  color: white;
+  text-align: left;
+  padding: 0;
+}
+
+.step-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.step-number {
+  font-size: 0.875rem;
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.step-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.step-content {
+  padding: 0 1rem 1.5rem 3rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.step-content p {
+  margin-bottom: 1rem;
+}
+
+.step-content ul,
+.step-content ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.step-content li {
+  margin-bottom: 0.5rem;
+}
+
+.step-content a {
+  color: #93c5fd;
+  text-decoration: underline;
+}
+
+.step-content a:hover {
+  color: #dbeafe;
+}
+
+.inline-icon {
+  display: inline;
+  margin-left: 0.25rem;
+}
+
+/* Content Boxes */
+.tip-box,
+.warning-box,
+.success-box,
+.settings-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tip-box {
+  background: rgba(59, 130, 246, 0.2);
+  border-left: 4px solid #3b82f6;
+}
+
+.warning-box {
+  background: rgba(245, 158, 11, 0.2);
+  border-left: 4px solid #f59e0b;
+}
+
+.success-box {
+  background: rgba(34, 197, 94, 0.2);
+  border-left: 4px solid #22c55e;
+}
+
+.settings-box {
+  background: rgba(139, 92, 246, 0.2);
+  border-left: 4px solid #8b5cf6;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.settings-box h4 {
+  margin: 0 0 0.5rem 0;
+  color: #c4b5fd;
+}
+
+.settings-box ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.highlight {
+  background: rgba(34, 197, 94, 0.3);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.resource-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Troubleshooting Section */
+.troubleshooting-section {
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.troubleshooting-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.trouble-card {
+  background: rgba(239, 68, 68, 0.2);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border-left: 4px solid #ef4444;
+}
+
+.trouble-card h4 {
+  color: #fca5a5;
+  margin-bottom: 0.5rem;
+}
+
+/* Extension Section */
+.extension-section {
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.extension-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.extension-list {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  list-style: none;
+  padding-left: 2rem;
+}
+
+.extension-list li {
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.extension-list li::before {
+  content: "🚀";
+  position: absolute;
+  left: 0;
+}
+
+/* Footer */
+.tutorial-footer {
+  text-align: center;
+  padding: 2rem;
+  opacity: 0.7;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .bobblehead-tutorial-page {
+    padding: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .troubleshooting-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-content {
+    padding-left: 1rem;
+  }
+
+  .step-header-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .step-trigger {
+    width: 100%;
+  }
+}
