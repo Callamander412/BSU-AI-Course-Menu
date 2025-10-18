@@ -20,7 +20,7 @@ const MusicGenPage = () => {
       description: 'Take your AI-generated music to the next level with advanced production techniques and professional editing workflows. Explore how to refine and polish your AI-created tracks using industry-standard audio software. Learn mixing, mastering, and arrangement strategies that transform raw AI outputs into radio-ready productions. Discover how to layer multiple AI-generated elements, add human touches, and create cohesive musical compositions that rival traditionally produced music.'
     },
     {
-      icon: <Waveform size={40} />,
+      icon: <AudioWaveform size={40} />,
       title: 'Audio Editing & Mixing',
       image: 'https://images.unsplash.com/photo-1509310202330-aec5af561c6b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxtdXNpYyUyMHByb2R1Y3Rpb258ZW58MHx8fHwxNzU5ODk2NTA0fDA&ixlib=rb-4.1.0&q=85',
       description: 'Master the technical aspects of audio editing and mixing to bring professional quality to your AI-generated music. Understand frequency ranges, compression, equalization, and spatial effects that make tracks sound polished and dynamic. Learn how to balance multiple audio elements, create depth in your mixes, and achieve the perfect sound for different platforms and playback systems. This tutorial covers both the artistic and technical sides of modern music production.'
