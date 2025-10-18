@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, Music, Sliders, Headphones, Waveform } from 'lucide-react';
+import { ArrowLeft, Music, Sliders, Headphones, AudioWaveform } from 'lucide-react';
 import './ProjectPage.css';
 
 const MusicGenPage = () => {
