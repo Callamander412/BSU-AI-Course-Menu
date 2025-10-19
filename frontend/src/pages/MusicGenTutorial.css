@@ -156,11 +156,9 @@
   transform: translateX(5px);
   box-shadow: 0 5px 20px rgba(16, 185, 129, 0.1);
 }
-  color: white;
-  padding: 2rem;
-}
 
-.bobblehead-tutorial-page::before {
+/* Back Button */
+.back-button {
   content: '';
   position: absolute;
   top: 0;
