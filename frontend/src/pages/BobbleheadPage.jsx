@@ -252,6 +252,9 @@ const BobbleheadPage = () => {
           <p className="hero-subtitle">Meshy + Voice Cloning + 3D Printing</p>
           
           <div className="project-overview">
+            <div className="overview-image-container">
+              <img src="https://doc-14-bc-docstext.googleusercontent.com/export/e6hpso97lrhpva19l3uocm525o/alpo9g8fj0uftt99upp6c45t14/1760837125000/111615661650392184309/*/images/c25de164d927ce67ee88d00d306bccb4452aa95283d688e8494b776fc03e83cc.jpg" alt="AI Bobblehead Project" className="overview-hero-image" />
+            </div>
             <h2>🧠 Project Overview</h2>
             <p>You'll design and fabricate a talking bobblehead of yourself (or a character of your choice). This project blends AI-generated 3D modeling, voice cloning, and 3D printing.</p>
             
