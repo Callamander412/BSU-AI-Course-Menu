@@ -1,7 +1,9 @@
 /* Bobblehead Tutorial Styles */
 .bobblehead-tutorial-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0a1e1a 0%, #0f2c23 50%, #0a1e1a 100%);
+  position: relative;
+  overflow-x: hidden;
   color: white;
   padding: 2rem;
 }
