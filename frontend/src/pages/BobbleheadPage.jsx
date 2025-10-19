@@ -62,14 +62,14 @@ const BobbleheadPage = () => {
           </ol>
           <div className="tutorial-images-grid">
             <div className="tutorial-image-container">
-              <img src="https://doc-14-bc-docstext.googleusercontent.com/export/e6hpso97lrhpva19l3uocm525o/alpo9g8fj0uftt99upp6c45t14/1760837125000/111615661650392184309/*/images/de46d5ef3348ee8cd0502216647c8d728ee63a2b20989fec5fcc6674e4e2cb90.jpg" alt="Meshy 3D model preview" className="tutorial-image" />
+              <img src="https://customer-assets.emergentagent.com/job_bsu-ai-projects/artifacts/mqtz2wxu_image.png" alt="Meshy 3D model preview" className="tutorial-image" />
               <p className="image-caption">3D model generated in Meshy - Topology: 354,028 Triangles, 197,175 Vertices</p>
             </div>
             <div className="tutorial-image-container">
-              <img src="https://doc-14-bc-docstext.googleusercontent.com/export/e6hpso97lrhpva19l3uocm525o/alpo9g8fj0uftt99upp6c45t14/1760837125000/111615661650392184309/*/images/4a069ab187a27a08ae1a6da8681f78f70b0388b67cae865ded3b48e251ad2393.jpg" alt="Meshy variations" className="tutorial-image" />
+              <img src="https://customer-assets.emergentagent.com/job_bsu-ai-projects/artifacts/7r5emov4_image.png" alt="Meshy side view preview" className="tutorial-image" />
             </div>
             <div className="tutorial-image-container">
-              <img src="https://doc-14-bc-docstext.googleusercontent.com/export/e6hpso97lrhpva19l3uocm525o/alpo9g8fj0uftt99upp6c45t14/1760837125000/111615661650392184309/*/images/f320aa7f74044c61ca3ec32401300b46e949b043fb9849c0510010de2c729a76.jpg" alt="Final 3D model view" className="tutorial-image" />
+              <img src="https://customer-assets.emergentagent.com/job_bsu-ai-projects/artifacts/8n4oepmn_image.png" alt="3D model head close-up" className="tutorial-image" />
             </div>
           </div>
           <div className="tip-box">
