@@ -127,13 +127,13 @@ const BobbleheadPage = () => {
           </ol>
           <div className="tutorial-images-grid">
             <div className="tutorial-image-container">
-              <img src="https://doc-14-bc-docstext.googleusercontent.com/export/e6hpso97lrhpva19l3uocm525o/alpo9g8fj0uftt99upp6c45t14/1760837125000/111615661650392184309/*/images/8e3e079617dd63182760abbfad659423dc960a872ec270c0f047e2774e16e7f8.jpg" alt="Blender model cleanup" className="tutorial-image" />
+              <img src="https://customer-assets.emergentagent.com/job_bsu-ai-projects/artifacts/5nonfl10_image.png" alt="Blender workspace with cavity base" className="tutorial-image" />
             </div>
             <div className="tutorial-image-container">
-              <img src="https://doc-14-bc-docstext.googleusercontent.com/export/e6hpso97lrhpva19l3uocm525o/alpo9g8fj0uftt99upp6c45t14/1760837125000/111615661650392184309/*/images/e792ffbb732ff7d4f824edce7da1fc811d813ce7f8602fc51b352d9fb5b6f152.jpg" alt="Boolean modifier for cavity" className="tutorial-image" />
+              <img src="https://customer-assets.emergentagent.com/job_bsu-ai-projects/artifacts/1pogw97u_image.png" alt="Blender side view - separated head and body" className="tutorial-image" />
             </div>
             <div className="tutorial-image-container">
-              <img src="https://doc-14-bc-docstext.googleusercontent.com/export/e6hpso97lrhpva19l3uocm525o/alpo9g8fj0uftt99upp6c45t14/1760837125000/111615661650392184309/*/images/e70cf5f9b40c612f60f3cc98685dfb56200f141e08d31ccf4e599b1e810820a8.jpg" alt="Base with cavity carved out" className="tutorial-image" />
+              <img src="https://customer-assets.emergentagent.com/job_bsu-ai-projects/artifacts/t7dv207z_image.png" alt="Blender top-down view - cavity cutout" className="tutorial-image" />
             </div>
           </div>
           <div className="tip-box">
