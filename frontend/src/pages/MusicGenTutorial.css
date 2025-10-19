@@ -6,6 +6,8 @@
   overflow-x: hidden;
   color: white;
   padding: 2rem;
+}
+
 .bobblehead-tutorial-page::before {
   content: '';
   position: absolute;
