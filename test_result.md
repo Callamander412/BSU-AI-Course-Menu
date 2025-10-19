@@ -101,3 +101,151 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Create a clean, polished, multi-page website for AI course students at Bemidji State University. The site features five AI project tutorials (Bobblehead, Suno Music Generation, Video Generation, Emergent Portfolio, Krita LORA) with an interactive carousel homepage. Each tutorial page includes collapsible steps, progress tracking with checkboxes, images, and professional BSU green/white theme. The application is purely frontend-focused with minimal backend (just basic API structure). User wants final review before deploying to another service."
+
+backend:
+  - task: "Basic FastAPI setup with MongoDB"
+    implemented: true
+    working: true
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Backend has basic FastAPI structure with /api prefix, MongoDB connection, and sample status check endpoints. Minimal backend usage as this is primarily a static tutorial site."
+
+frontend:
+  - task: "Homepage with interactive carousel"
+    implemented: true
+    working: "needs_verification"
+    file: "/app/frontend/src/pages/HomePage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "needs_verification"
+        agent: "main"
+        comment: "Homepage loads successfully with carousel showing cartoon characters, project titles, and navigation. Need to verify all carousel interactions and navigation to tutorial pages."
+
+  - task: "Bobblehead Project Tutorial Page"
+    implemented: true
+    working: "needs_verification"
+    file: "/app/frontend/src/pages/BobbleheadPage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "needs_verification"
+        agent: "main"
+        comment: "Comprehensive tutorial with 8 steps, 11 images, progress tracker, collapsible accordions, checkboxes, BSU theme. Needs verification of all interactive elements and local storage persistence."
+
+  - task: "Suno Music Generation Tutorial Page"
+    implemented: true
+    working: "needs_verification"
+    file: "/app/frontend/src/pages/MusicGenPage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "needs_verification"
+        agent: "main"
+        comment: "Tutorial with side-by-side audio players, 3 screenshots, collapsible steps, BSU theme. Need to verify audio player functionality and all content displays correctly."
+
+  - task: "Video Generation Tutorial Page"
+    implemented: true
+    working: "needs_verification"
+    file: "/app/frontend/src/pages/VideoGenPage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "needs_verification"
+        agent: "main"
+        comment: "Tutorial with flipbook-style carousel for 4 videos, rubric, workflow steps, BSU theme. Need to verify video carousel and playback functionality."
+
+  - task: "Krita LORA Training Tutorial Page"
+    implemented: true
+    working: "needs_verification"
+    file: "/app/frontend/src/pages/KritaPage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "needs_verification"
+        agent: "main"
+        comment: "Tutorial with before/after drawing examples, ethical guidelines, collapsible steps, BSU theme. Need to verify all content and image displays."
+
+  - task: "Emergent Portfolio Website Tutorial Page"
+    implemented: true
+    working: "needs_verification"
+    file: "/app/frontend/src/pages/PortfolioPage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "needs_verification"
+        agent: "main"
+        comment: "Tutorial with tools table, step-by-step guide, assessment rubric, BSU theme. Need to verify all tables and content display correctly."
+
+  - task: "Progress tracking and local storage"
+    implemented: true
+    working: "needs_verification"
+    file: "All tutorial pages"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "needs_verification"
+        agent: "main"
+        comment: "All tutorial pages have checkboxes and progress bars that save to local storage. Need to verify persistence across page refreshes and browser sessions."
+
+  - task: "BSU theme consistency"
+    implemented: true
+    working: "needs_verification"
+    file: "All CSS files"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: "needs_verification"
+        agent: "main"
+        comment: "Dark forest green/teal BSU theme applied consistently across all pages. Need to verify visual consistency and responsive design."
+
+  - task: "Routing and navigation"
+    implemented: true
+    working: "needs_verification"
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "needs_verification"
+        agent: "main"
+        comment: "React Router setup with 6 routes (homepage + 5 tutorial pages). Need to verify all routes work correctly and navigation is smooth."
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 1
+  run_ui: true
+
+test_plan:
+  current_focus:
+    - "Homepage with interactive carousel"
+    - "Bobblehead Project Tutorial Page"
+    - "Suno Music Generation Tutorial Page"
+    - "Video Generation Tutorial Page"
+    - "Krita LORA Training Tutorial Page"
+    - "Emergent Portfolio Website Tutorial Page"
+    - "Progress tracking and local storage"
+    - "Routing and navigation"
+  stuck_tasks: []
+  test_all: true
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "main"
+    message: "Starting final comprehensive review before deployment. All 5 tutorial pages have been implemented with full content, images, interactive elements (accordions, checkboxes, progress bars), and BSU theme. Backend is minimal with basic FastAPI structure. Ready for UI testing to verify all interactive elements, navigation, local storage persistence, and overall user experience. User wants to ensure everything works before deploying to another service."
