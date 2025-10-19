@@ -250,7 +250,7 @@ const BobbleheadPage = () => {
           
           <div className="project-overview">
             <div className="overview-image-container">
-              <img src="https://customer-assets.emergentagent.com/job_bsu-ai-projects/artifacts/5hyptjsn_image.png" alt="AI Bobblehead Project - 2D Concept" className="overview-hero-image" />
+              <img src="https://customer-assets.emergentagent.com/job_bsu-ai-projects/artifacts/1pogw97u_image.png" alt="AI Bobblehead Project - 3D Model" className="overview-hero-image" />
             </div>
             <h2>🧠 Project Overview</h2>
             <p>You'll design and fabricate a talking bobblehead of yourself (or a character of your choice). This project blends AI-generated 3D modeling, voice cloning, and 3D printing.</p>
