@@ -177,19 +177,20 @@ const BobbleheadPage = () => {
     },
     {
       id: 'step6',
-      title: 'Clone Your Voice with VoicV',
+      title: 'Clone Your Voice with VoicV (or Record Phrases Manually)',
       content: (
         <>
+          <p className="note-text">You may also just record your different phrases if you'd like to avoid AI.</p>
           <ol>
             <li>Go to <a href="https://voicv.com/voice-cloning" target="_blank" rel="noopener noreferrer">VoicV Voice Cloning <ExternalLink size={14} className="inline-icon" /></a></li>
             <li>Record a clean 30–60 second voice sample</li>
             <li>Upload and wait for model training</li>
-            <li>Once complete, use the Text-to-Speech feature to generate your bobblehead phrases (e.g., "Hey there! I'm mini-me!")</li>
+            <li>Once complete, use the Text-to-Speech feature to generate 8-10 bobblehead phrases (e.g., "Hey there! I'm mini-me!")</li>
             <li>Download as .MP3 or .WAV</li>
           </ol>
           <div className="warning-box">
             <AlertCircle size={20} />
-            <p><strong>⚠️ Ethics Warning:</strong> Only use your own voice or voices recorded with explicit permission. Voice cloning without consent violates academic and ethical guidelines.</p>
+            <p><strong>⚠️ Ethics Tip:</strong> Avoid using anyone else's voice. Voice cloning without consent violates many academic and ethical guidelines.</p>
           </div>
         </>
       )
