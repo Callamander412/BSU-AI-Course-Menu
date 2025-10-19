@@ -158,7 +158,7 @@ const BobbleheadPage = () => {
             <li>Slice and export to G-code or send to printer</li>
           </ol>
           <div className="tutorial-image-container">
-            <img src="https://doc-14-bc-docstext.googleusercontent.com/export/e6hpso97lrhpva19l3uocm525o/alpo9g8fj0uftt99upp6c45t14/1760837125000/111615661650392184309/*/images/35494adf3fe1ce13efae856de607ee3643f5adccf88478507331d9e18b4b501d.jpg" alt="Bambu Studio slicing interface" className="tutorial-image" />
+            <img src="https://customer-assets.emergentagent.com/job_bsu-ai-projects/artifacts/dkiko4cs_image.png" alt="Bambu Studio slicing interface" className="tutorial-image" />
           </div>
           <div className="settings-box">
             <h4>Recommended Printing Settings:</h4>
