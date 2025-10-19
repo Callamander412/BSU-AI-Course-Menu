@@ -86,11 +86,25 @@ const BobbleheadPage = () => {
         <>
           <p className="highlight">🟢 You can now publish your model straight from Meshy — no paid export required.</p>
           <ol>
-            <li>When your Meshy model is complete, click <strong>Publish to Sketchfab</strong></li>
+            <li>When your Meshy model is complete, click <strong>Publish to Sketchfab</strong>. (You also may be able to directly download the model but it may not be in a good file format which is why I recommend sending it to Sketchfab. Save tokens and get a good FBX, OBJ or GLB)</li>
             <li>You may be prompted to link or create a Sketchfab account</li>
             <li>After publishing, open your model page on Sketchfab and toggle "Downloadable" in the settings</li>
             <li>Set the license to <strong>Creative Commons Attribution (CC BY)</strong> or <strong>All Rights Reserved</strong> if it's your original work</li>
           </ol>
+          <div className="tutorial-images-grid">
+            <div className="tutorial-image-container">
+              <img src="https://doc-14-bc-docstext.googleusercontent.com/export/e6hpso97lrhpva19l3uocm525o/alpo9g8fj0uftt99upp6c45t14/1760837125000/111615661650392184309/*/images/88617324492f981a3826182ccafc3a934713f9f9675121214f3c1ee0a650b072.jpg" alt="Publish to Sketchfab button" className="tutorial-image" />
+            </div>
+            <div className="tutorial-image-container">
+              <img src="https://doc-14-bc-docstext.googleusercontent.com/export/e6hpso97lrhpva19l3uocm525o/alpo9g8fj0uftt99upp6c45t14/1760837125000/111615661650392184309/*/images/89c1cbfb9f3db812cfc7b5eddc3d2ae81de006e11ef1c5e1e558203b3c47e1e5.jpg" alt="Sketchfab model page" className="tutorial-image" />
+            </div>
+            <div className="tutorial-image-container">
+              <img src="https://doc-14-bc-docstext.googleusercontent.com/export/e6hpso97lrhpva19l3uocm525o/alpo9g8fj0uftt99upp6c45t14/1760837125000/111615661650392184309/*/images/0abae2e44852c2d42d53b5ab68d4405c0b5ecc273800d2f8d81df1117d1e9671.jpg" alt="Sketchfab downloadable toggle" className="tutorial-image" />
+            </div>
+            <div className="tutorial-image-container">
+              <img src="https://doc-14-bc-docstext.googleusercontent.com/export/e6hpso97lrhpva19l3uocm525o/alpo9g8fj0uftt99upp6c45t14/1760837125000/111615661650392184309/*/images/3354be9f64772901cbdb690a241b991b80f2eda3976a02a7864e889228869cb3.jpg" alt="Sketchfab license settings" className="tutorial-image" />
+            </div>
+          </div>
           <p className="resource-link">
             <ExternalLink size={16} />
             <a href="https://help.sketchfab.com/hc/en-us/articles/202512873-Publishing-3D-Models" target="_blank" rel="noopener noreferrer">
