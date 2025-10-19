@@ -151,6 +151,7 @@ const BobbleheadPage = () => {
       title: 'Slice for Print in Bambu Studio',
       content: (
         <>
+          <p className="note-text">Optional if your lab PCs already have the slicer installed.</p>
           <p>Download: <a href="https://bambulab.com/en/software/bambu-studio" target="_blank" rel="noopener noreferrer">Bambu Studio <ExternalLink size={14} className="inline-icon" /></a></p>
           <ol>
             <li>Import both body and base STLs</li>
@@ -159,6 +160,9 @@ const BobbleheadPage = () => {
             <li>Preview your layers to ensure the cavity is empty (no infill)</li>
             <li>Slice and export to G-code or send to printer</li>
           </ol>
+          <div className="tutorial-image-container">
+            <img src="https://doc-14-bc-docstext.googleusercontent.com/export/e6hpso97lrhpva19l3uocm525o/alpo9g8fj0uftt99upp6c45t14/1760837125000/111615661650392184309/*/images/35494adf3fe1ce13efae856de607ee3643f5adccf88478507331d9e18b4b501d.jpg" alt="Bambu Studio slicing interface" className="tutorial-image" />
+          </div>
           <div className="settings-box">
             <h4>Recommended Printing Settings:</h4>
             <ul>
