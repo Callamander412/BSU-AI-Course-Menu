@@ -39,7 +39,7 @@ const BobbleheadPage = () => {
             <li>Export your design as a PNG or JPG for reference</li>
           </ul>
           <div className="tutorial-image-container">
-            <img src="https://doc-14-bc-docstext.googleusercontent.com/export/e6hpso97lrhpva19l3uocm525o/alpo9g8fj0uftt99upp6c45t14/1760837125000/111615661650392184309/*/images/39dc38858942e081a6af141ba995c64f39120c87622e93d7375ed95eae42078a.jpg" alt="2D Bobblehead concept example" className="tutorial-image" />
+            <img src="https://customer-assets.emergentagent.com/job_bsu-ai-projects/artifacts/5hyptjsn_image.png" alt="2D Bobblehead concept example" className="tutorial-image" />
           </div>
           <div className="tip-box">
             <AlertCircle size={20} />
